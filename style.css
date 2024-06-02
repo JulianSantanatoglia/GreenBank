@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* PALETA DE COLORES
+
+.color1 { #607848 };
+.color2 { #789048 };
+.color3 { #c0d860 };
+.color4 { #f0f0d8 };
+.color5 { #604848 }; */
+
+body {
+    background-color: #f0f0d8;
+
+}
+
+.main__container {
+    background-color: #FFFFFF;
+    width: 70%;
+    height: 1900px;
+    margin: auto;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75); box-shadow: 0;
+}
+
+.contenedor__nav {
+    background-color: #f0f0d8;
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    padding: 0 0 15px 0;
+}
+
+.background-white {
+    background-color: #FFFFFF;
+    padding: 0;
+}
+
+.border-green:hover {
+    border-bottom: 3px solid #607848;
+    padding-bottom: 4px;
+    color: #c0d860;
+}
+
+/* FORM */
+.prop-form {
+  padding: 10px 0;
+}
+
+.form-label {
+  /* margin: auto; */
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  
+}
+
+.button-prop {
+  background-color: f0f0d8;
+  width: 100%;
+  margin-top: 7px;
+}
+
+
+.section__prestamo {
+    width: 450px;
+    margin: auto;
+    padding: 15px;
+}
+
+.span-prop{
+    font-weight: 500;
+}
+.section__container {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../source/img/imagen-prestamo.jpg);
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+.select-prop {
+  background-color: #789048;
+  color: #FFF;
+}
+
+.section__text {
+    font-size: 45px;
+    color: #FFFFFF;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.cartas-contenedor {
+    background-size: cover;
+    background-position: center;
+}
+
+.section__dos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.subtitulo {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+   font-size: 45px;
+   padding: 40px;
+   color: #607848;
+}
+
+
+/* PALETA DE COLORES
+
+.color1 { #607848 };
+.color2 { #789048 };
+.color3 { #c0d860 };
+.color4 { #f0f0d8 };
+.color5 { #604848 }; */
+
+
+
+    /* INICIO CARDS  */
+.text-center {
+    text-align: center;
+  }
+  
+  .color-white {
+    color: #fff;
+  }
+  
+  .box-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 15px;
+    width: 100%;
+  }
+  
+  @media screen and (min-width:1380px) {
+    .box-container {
+      flex-direction: row
+    }
+  }
+  
+  .box-item {
+    position: relative;
+    /* -webkit-backface-visibility: hidden; */
+    width: 350px;
+    margin-bottom: 35px;
+    max-width: 100%;
+  }
+  
+  .flip-box {
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+  }
+  
+  .flip-box-front,
+  .flip-box-back {
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    min-height: 300px;
+    -ms-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+    transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+    -webkit-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    -ms-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-front {
+    -ms-transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-back {
+    -ms-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box .inner {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 60px;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+    perspective: inherit;
+    z-index: 2;
+    
+    transform: translateY(-50%) translateZ(60px) scale(.94);
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(.94);
+    -ms-transform: translateY(-50%) translateZ(60px) scale(.94);
+    top: 50%;
+  }
+  
+  .flip-box-header {
+    font-size: 34px;
+  }
+  
+  .flip-box p {
+    font-size: 20px;
+    line-height: 1.5em;
+  }
+  
+  .flip-box-img {
+    margin-top: 25px;
+  }
+  
+  .flip-box-button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+  }
+
+  /* FIN CARDS */

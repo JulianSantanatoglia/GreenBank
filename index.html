@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ESTILOS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+
+    <title>Simulador Home Banking</title>
+</head>
+<body>
+  <!-- INICIO MAIN -->
+  <main class="main__container">
+    <header class="header__container">
+        <div class="contenedor__nav">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary background-white">
+            <div class="container-fluid nav__prop background-white">
+              <a class="navbar-brand logo-prop" href="#">Home<span class="span-prop">banking</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active border-green" aria-current="page" href="#">Home</a>
+                  <a class="nav-link border-green" href="#">Préstamo</a>
+                  <a class="nav-link border-green" href="#">Cotización</a>
+                </div>
+              </div>
+            </div>
+            </div>
+          </nav>
+    </header>
+
+
+    <!-- SECTION -->
+    <section class="section__container">   
+      <h1 class="section__text">Cumpliendo sueños, construyendo futuro.</h1>
+    </section>
+
+
+
+    <div class="section__dos">
+      <h2 class="subtitulo">
+        Tu aliado para alcanzar tus metas
+      </h2>
+    </div>
+
+
+
+    <!-- INICIO CARDS -->
+    
+    <div class="box-container">
+      <div class="box-item">
+        <div class="flip-box">
+          <div class="flip-box-front text-center" style="background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../source/img/imagen-casa.jpg); background-position: center; background-size: cover;">
+            <div class="inner color-white">
+              <h3 class="flip-box-header">Casa</h3>
+              <p>Cumple tu sueño de hogar con nuestros préstamos hipotecarios flexibles</p>
+              <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+            </div>
+          </div>
+          <div class="flip-box-back text-center" style="background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../source/img/imagen-casa.jpg); background-position: center; background-size: cover;">>
+            <div class="inner color-white">
+              <h3 class="flip-box-header">Casa</h3>
+              <p>Cumple tu sueño de hogar con nuestros préstamos hipotecarios flexibles.</p>
+              <button class="flip-box-button">Leer más</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box-item">
+        <div class="flip-box">
+          <div class="flip-box-front text-center" style="background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../source/img/imagen-coche.jpg); background-position: center; background-size: cover;">
+            <div class="inner color-white">
+              <h3 class="flip-box-header">Coche</h3>
+              <p>Conduce tu futuro con un préstamo auto a tu medida. Financiación ágil y competitiva.</p>
+              <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+            </div>
+          </div>
+          <div class="flip-box-back text-center" style="background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../source/img/imagen-coche.jpg); background-position: center; background-size: cover;">
+            <div class="inner color-white">
+              <h3 class="flip-box-header">Coche</h3>
+              <p>Conduce tu futuro con un préstamo auto a tu medida. Financiación ágil y competitiva.</p>
+              <button class="flip-box-button">Leer más</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box-item">
+        <div class="flip-box">
+          <div class="flip-box-front text-center filter-" style="background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../source/img/imagen-viaje.jpg); background-position: center; background-size: cover;">
+            <div class="inner color-white">
+              <h3 class="flip-box-header">Viaje</h3>
+              <p>Explora el mundo con un préstamo personal. Tu aventura comienza aquí.</p>
+              <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+            </div>
+          </div>
+          <div class="flip-box-back text-center" style="background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../source/img/imagen-viaje.jpg); background-position: center; background-size: cover;">
+            <div class="inner color-white">
+              <h3 class="flip-box-header">Viaje</h3>
+              <p>Explora el mundo con un préstamo personal. Tu aventura comienza aquí.</p>
+              <button class="flip-box-button">Leer más</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!--  FORM -->
+
+
+        <section class="section__prestamo">
+           <div class="contenido primario">
+                  <h2 class="text-center">Calcula tu prestamo</h2>
+                      <form id="agregar-gasto" action="#">
+                          <div class="form-group prop-form">
+                              <!-- <label for="gasto">Nombre</label> -->
+                              <input type="text" class="form-control" id="gasto" placeholder="Ingresa tu nombre">
+                          </div>
+                          <div class="form-group prop-form">
+                              <!-- <label for="cantidad">Apellido:</label> -->
+                              <input type="text" class="form-control" id="cantidad" placeholder="Ingresa tu apellido">
+                          </div>
+
+                          <div class="form-group prop-form">
+                            <!-- <label for="cantidad">Apellido:</label> -->
+                            <input type="email" class="form-control" id="cantidad" placeholder="Ingresa tu email">
+                        </div>
+
+                        <div class="form-group prop-form">
+                          <!-- <label for="cantidad">Apellido:</label> -->
+                          <input type="number" class="form-control" id="cantidad" placeholder="¿Cuanto dinero necesitas?">
+                      </div>
+                    
+                      <div class="form-group prop-form">
+                        <!-- <label for="cantidad">Apellido:</label> -->
+                        <label for="favoriteOnly" class="form-label">¿En cuantos meses quieres financiarlo?</label>
+                        <select class="form-control select-prop" name="favoriteOnly" id="favoriteOnly">
+                          <option class="select-prop">12 meses</option>
+                          <option class="select-prop">24 meses</option>
+                          <option class="select-prop">36 meses</option>
+                          <option class="select-prop">48 meses</option>
+                          <option class="select-prop">60 meses</option>
+                        </select>
+                  
+                          <button type="submit" class="btn btn-primary button-prop">Calcular</button>
+                      </form>
+           </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
+    <script src="main.js"></script>
+</body>
+</html>
