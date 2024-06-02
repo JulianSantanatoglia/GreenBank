@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* PALETA DE COLORES
+/* ################ PALETA DE COLORES ################
 
 .color1 { #607848 };
 .color2 { #789048 };
 .color3 { #c0d860 };
 .color4 { #f0f0d8 };
-.color5 { #604848 }; */
+.color5 { #604848 }; ################ */
 
 body {
     background-color: #f0f0d8;
@@ -16,7 +16,7 @@ body {
 .main__container {
     background-color: #FFFFFF;
     width: 70%;
-    height: 1900px;
+    height: 100%;
     margin: auto;
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75); box-shadow: 0;
 }
@@ -40,17 +40,21 @@ body {
     color: #c0d860;
 }
 
-/* FORM */
+/* ################ FORM ################ */
 .prop-form {
   padding: 10px 0;
 }
 
 .form-label {
-  /* margin: auto; */
   display: flex;
   font-size: 18px;
   justify-content: center;
   
+}
+
+.text-prop {
+  font-size: 45px;
+  padding: 5px;
 }
 
 .button-prop {
@@ -60,10 +64,17 @@ body {
 }
 
 
+/* .color1 { #607848 };
+.color2 { #789048 };
+.color3 { #c0d860 };
+.color4 { #f0f0d8 };
+.color5 { #604848 }; ################ */ 
 .section__prestamo {
-    width: 450px;
+    background-color: #f0f0d8;
+    width: 600px;
     margin: auto;
-    padding: 15px;
+    padding: 30px;
+    border-radius: 15px;
 }
 
 .span-prop{
@@ -82,6 +93,15 @@ body {
 .select-prop {
   background-color: #789048;
   color: #FFF;
+}
+
+.select-flex-prop {
+  text-align: center;
+}
+.select-prop:hover {
+  background-color: #607848;
+  color: #FFF;
+  cursor: pointer;
 }
 
 .section__text {
@@ -114,17 +134,12 @@ body {
 }
 
 
-/* PALETA DE COLORES
 
-.color1 { #607848 };
-.color2 { #789048 };
-.color3 { #c0d860 };
-.color4 { #f0f0d8 };
-.color5 { #604848 }; */
+    /* ################ INICIO CARDS ################  */
 
-
-
-    /* INICIO CARDS  */
+.box-container {
+  margin-bottom: 50px;
+ }
 .text-center {
     text-align: center;
   }
@@ -260,4 +275,42 @@ body {
     text-transform: uppercase;
   }
 
-  /* FIN CARDS */
+  /* ##################--> FIN CARDS ##################--> */
+
+  
+  /*  ##################--> TESTIMONIALES ##################--> */
+
+  .testimoniales-contenedor {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+
+  .testimonials {
+    padding: 100px 0;
+  }
+  .testimonials h3 {
+    margin-bottom: 20px;
+  }
+  .testimonials .card {
+    border-bottom: 3px #c0d860 solid !important;
+    transition: 0.5s;
+    margin-top: 60px;
+  }
+  .testimonials .card i {
+    background-color: #c0d860;
+    color: #ffffff;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    margin: -40px auto 0 auto;
+  }
+  /* ################ PALETA DE COLORES ################
+
+.color1 { #607848 };
+.color2 { #789048 };
+.color3 { #c0d860 };
+.color4 { #f0f0d8 };
+.color5 { #604848 }; ################ */
