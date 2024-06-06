@@ -43,13 +43,20 @@
       <h2 class="subtitulo">
         Tu aliado para alcanzar tus metas
       </h2>
+      
     </div>
+
+
+<!-- WAVE -->
+
+
+
 
 
 
     <!-- ################ INICIO CARDS ################-->
     
-    <div class="box-container">
+    <div class="box-container padding-top-cards">
       <div class="box-item">
         <div class="flip-box">
           <div class="flip-box-front text-center" style="background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(source/img/imagen-casa.jpg); background-position: center; background-size: cover;">
@@ -107,46 +114,52 @@
     </div>
 
 
-<!-- ################ FORM ################ -->
+    <svg class="wave-padding" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#607848" fill-opacity="1" d="M0,96L30,96C60,96,120,96,180,85.3C240,75,300,53,360,53.3C420,53,480,75,540,85.3C600,96,660,96,720,106.7C780,117,840,139,900,149.3C960,160,1020,160,1080,170.7C1140,181,1200,203,1260,197.3C1320,192,1380,160,1410,144L1440,128L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg>
+  
 
 
-        <section class="section__prestamo" id="prestamo">
+        <section class="section__prestamo section-padding-top" id="prestamo">
            <div class="contenido primario">
                   <h2 class="text-center text-prop">Calcula tu prestamo</h2>
-                      <form id="agregar-gasto" action="#">
-                          <div class="form-group prop-form">
-                              <!-- <label for="gasto">Nombre</label> -->
-                              <input type="text" class="form-control" id="gasto" placeholder="Ingresa tu nombre">
-                          </div>
-                          <div class="form-group prop-form">
-                              <!-- <label for="cantidad">Apellido:</label> -->
-                              <input type="text" class="form-control" id="cantidad" placeholder="Ingresa tu apellido">
-                          </div>
+                     
 
-                          <div class="form-group prop-form">
-                            <!-- <label for="cantidad">Apellido:</label> -->
-                            <input type="email" class="form-control" id="cantidad" placeholder="Ingresa tu email">
-                        </div>
+        
 
-                        <div class="form-group prop-form">
-                          <!-- <label for="cantidad">Apellido:</label> -->
-                          <input type="number" class="form-control" id="cantidad" placeholder="¿Cuanto dinero necesitas?">
+    <!-- ################ FORM ################ -->
+
+                      <form id="loan-form">
+                        <div class="primera-columna  resultado-prestamo">
+                          <div class="flex-formu">
+                        <label class="clase-padding prop-tipo" for="amount">Ingresa cuanto dinero quieres:</label>
+                        <input class="form-control clase-padding text-center" type="number" id="amount" required>
                       </div>
-                    
-                      <div class="form-group prop-form">
-                        <!-- <label for="cantidad">Apellido:</label> -->
-                        <label for="favoriteOnly" class="form-label">¿En cuantos meses quieres financiarlo?</label>
-                        <select class="form-control select-prop select-flex-prop" name="favoriteOnly" id="favoriteOnly">
-                          <option class="select-prop">12 meses</option>
-                          <option class="select-prop">24 meses</option>
-                          <option class="select-prop">36 meses</option>
-                          <option class="select-prop">48 meses</option>
-                          <option class="select-prop">60 meses</option>
+                    </div>
+                        <div class="primera-columna  resultado-prestamo">
+                          <div class="flex-formu">
+                        <label class="clase-padding prop-tipo" for="term">Elige en cuantos meses:</label>
+                        <select class="form-control select-prop select-flex-prop clase-padding ocupa-todo" id="term" required>
+                            <option class="select-prop botones-meses" value="24">24 meses - 10% interés</option>
+                            <option class="select-prop botones-meses value="36">36 meses - 15% interés</option>
+                            <option class="select-prop botones-meses value="48">48 meses - 20% interés</option>
+                            <option class="select-prop botones-meses value="60">60 meses - 25% interés</option>
                         </select>
-                  
-                          <button type="submit" class="btn btn-primary button-prop">Calcular</button>
-                      </form>
+                      </div>
+                        </div>
+                        <button class="btn btn-primary button-prop" type="submit" id="boton-calcularr">Calcular</button>
+                    </form>
+                    <div id="result">
+                      <h2 class="text-center text-prop">Resultado</h2>
+                      <p class="form-control resultado-prestamo clase-padding borde-redondo" id="monthly-payment">Pago mensual: $</p>
+                      <p class="form-control resultado-prestamo clase-padding borde-redondo" id="total-payment">Pago total: $</p>
+                      <p class="form-control resultado-prestamo clase-padding borde-redondo" id="total-interest">Intereses totales: $</p>
+                      <button type="button" class="btn btn-primary button-prop boton-calcular" id="email-alert-button">¡SOLICITAR PRESTAMO YA!</button>
+                  </div>
            </section>
+
+
+
+
+           <svg class="wave-padding" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#607848" fill-opacity="1" d="M0,256L30,234.7C60,213,120,171,180,133.3C240,96,300,64,360,42.7C420,21,480,11,540,21.3C600,32,660,64,720,74.7C780,85,840,75,900,85.3C960,96,1020,128,1080,160C1140,192,1200,224,1260,224C1320,224,1380,192,1410,176L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
 
 
 <!-- #################### TESTIMONIAL ##################-->
@@ -196,25 +209,43 @@
 
 <!-- ################ FIN TESTIMONIAL ################ -->
 
-<!-- API DE COTIZACION -->
+<div class="container">
+  <h1>Simulador de Préstamo</h1>
+  <form id="loan-form">
+      <label for="amount">Monto del préstamo:</label>
+      <input type="number" id="amount" required>
 
-<!-- <h3 class="text-prop">Cotizacion</h3> -->
+      <label for="term">Plazo en meses:</label>
+      <select id="term" required>
+          <option value="24">24 meses - 10% interés</option>
+          <option value="36">36 meses - 15% interés</option>
+          <option value="48">48 meses - 20% interés</option>
+          <option value="60">60 meses - 25% interés</option>
+      </select>
 
-<!-- FIN DE API DE COTIZACION -->
+      <button type="submit">Calcular</button>
+  </form>
 
+  <!-- Spinner -->
+  <div class="spinner" id="calc-spinner" style="display:none;">
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
+  </div>
 
-
+  <!-- Aquí se mostrarán los resultados -->
+  <div id="result-container"></div>
+</div>
 
 <!-- ################ FOOTER ################ -->
 
-<footer class="bg-body-tertiary text-center text-lg-start">
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2024 Copyright:
-    <a class="text-body" href="#">HomeBanking</a>
-  </div>
-  <!-- Copyright -->
-</footer>
+      <footer class="bg-body-tertiary text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2024 Copyright:
+          <a class="text-body" href="#">HomeBanking</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
 
 <!-- ################ FIN FOOTER ################ -->
 
@@ -222,9 +253,19 @@
     </main>
 
 
-    <!-- SCRIPTS -->
+
+
+
+
+
+    <!-- ################ SCRIPTS ################ -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
-    <script src="main.js"></script>
+    <script src="/scripts/form.js"></script>
+    <script src="/scripts/prestamo.js"></script>
+    <script src="/scripts/formsecundario.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 </html>
+
+
