@@ -379,3 +379,24 @@ body {
 
 
 
+/* COTIZADOR */
+.margin-top-20 {
+  margin-top: 50px;
+}
+
+.text-align-center {
+  display: flex;
+  justify-content: center;
+}
+
+.menos-porcentaje {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
