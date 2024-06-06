@@ -70,12 +70,11 @@ function validateEmail(email) {
 }
 
 
-
-
 // LOCALSTORAGE
 
 document.getElementById('boton-calcularr').addEventListener('click', function() {
     let nombre = document.getElementById('amount').value;
     localStorage.setItem('nombre', nombre);
 });
+
 

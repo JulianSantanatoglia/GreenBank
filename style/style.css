@@ -81,8 +81,19 @@ body {
 }
 
 .span-prop{
-    font-weight: 500;
+    font-weight: 700;
+    color: #607848;
 }
+
+.span-prop-2 {
+  font-weight: 500;
+  color:#b0d717;
+}
+
+.text-deco {
+  text-decoration: none;
+}
+
 .section__container {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../source/img/imagen-prestamo.jpg);
     width: 100%;
