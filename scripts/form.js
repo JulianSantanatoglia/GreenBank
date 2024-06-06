@@ -1,13 +1,11 @@
 document.getElementById('loan-form').addEventListener('submit', function(e) {
     e.preventDefault();
 
-    // Obtiene valores de los inputs
     const amount = parseFloat(document.getElementById('amount').value);
     const term = parseInt(document.getElementById('term').value);
 
     let interestRate;
 
-    // Determina la tasa de interés según el plazo
     switch(term) {
         case 24:
             interestRate = 0.10;
@@ -25,12 +23,10 @@ document.getElementById('loan-form').addEventListener('submit', function(e) {
             interestRate = 0;
     }
 
-    // Calcula el interés total
     const totalInterest = amount * interestRate;
     const totalPayment = amount + totalInterest;
     const monthlyPayment = totalPayment / term;
 
-    // Muestra los resultados
     document.getElementById('monthly-payment').textContent = `Pago mensual: $${monthlyPayment.toFixed(2)}`;
     document.getElementById('total-payment').textContent = `Pago total: $${totalPayment.toFixed(2)}`;
     document.getElementById('total-interest').textContent = `Intereses totales: $${totalInterest.toFixed(2)}`;
@@ -49,7 +45,6 @@ document.getElementById('email-alert-button').addEventListener('click', function
         confirmButtonText: 'Enviar',
         cancelButtonText: 'Cancelar',
         inputValidator: (value) => {
-            // Validar que el email no esté vacío y tenga un formato válido
             if (!value) {
                 return '¡Debes ingresar un email!';
             } else if (!validateEmail(value)) {
@@ -67,6 +62,7 @@ document.getElementById('email-alert-button').addEventListener('click', function
     });
 });
 
+
 // Función de validación de email
 function validateEmail(email) {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -75,4 +71,11 @@ function validateEmail(email) {
 
 
 
+
+// LOCALSTORAGE
+
+document.getElementById('boton-calcularr').addEventListener('click', function() {
+    let nombre = document.getElementById('amount').value;
+    localStorage.setItem('nombre', nombre);
+});
 

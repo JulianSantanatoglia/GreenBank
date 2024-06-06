@@ -5,7 +5,7 @@ document.getElementById('currency-form').addEventListener('submit', async (event
     const toCurrency = document.getElementById('to-currency').value;
     const amountt = document.getElementById('amountt').value;
 
-    const apiKey = '0063252511ab9048ef2db548'; // Reemplaza con tu API Key de ExchangeRate-API
+    const apiKey = '0063252511ab9048ef2db548';
     const url = `https://v6.exchangerate-api.com/v6/${apiKey}/latest/${fromCurrency}`;
 
     try {
