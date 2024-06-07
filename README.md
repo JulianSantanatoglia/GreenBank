@@ -1,7 +1,7 @@
 - **Alertas Interactivas**: Implementa SweetAlerts para mostrar alertas y notificaciones de manera elegante.
 # GreenBank
 
-GreenBank es un proyecto ficticio de un simulador de banco, diseñado para clientes que desean solicitar préstamos para financiar una casa, un auto o un viaje. Además, incluye un cotizador de dólar a euro. Este proyecto fue desarrollado utilizando HTML, CSS, Bootstrap, JavaScript, SweetAlerts y Spinners.
+GreenBank es un proyecto ficticio de un simulador de banco para mi proyecto final del curso de Javascript de CoderHouse, diseñado para clientes que desean solicitar préstamos para financiar una casa, un auto o un viaje. Además, incluye un cotizador de dólar a euro. Este proyecto fue desarrollado utilizando HTML, CSS, Bootstrap, JavaScript, SweetAlerts y Spinners.
 
 ## Características
 
@@ -17,3 +17,8 @@ GreenBank es un proyecto ficticio de un simulador de banco, diseñado para clien
 - **JavaScript**: Lógica del simulador y cotizador.
 - **SweetAlerts**: Alertas y notificaciones.
 - **Spinners**: Indicadores de carga.
+
+
+**bY Julián Santanatoglia**
+
+
