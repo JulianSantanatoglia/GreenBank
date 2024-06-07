@@ -1,13 +1,13 @@
+- **Alertas Interactivas**: Implementa SweetAlerts para mostrar alertas y notificaciones de manera elegante.
 # GreenBank
 
-¡Bienvenido a GreenBank! Este es un simulador de banco destinado a clientes que deseen solicitar préstamos para financiar una casa, un auto o un viaje. Además, incluye un cotizador de dólar a euro. Este proyecto está desarrollado utilizando HTML, CSS, Bootstrap y JavaScript
+GreenBank es un proyecto ficticio de un simulador de banco, diseñado para clientes que desean solicitar préstamos para financiar una casa, un auto o un viaje. Además, incluye un cotizador de dólar a euro. Este proyecto fue desarrollado utilizando HTML, CSS, Bootstrap, JavaScript, SweetAlerts y Spinners.
 
 ## Características
 
-- **Simulador de Préstamos**: Solicita préstamos para diferentes propósitos como la compra de una casa, un auto o un viaje.
-- **Cotizador de Divisas**: Calcula el cambio de dólar a euro en tiempo real.
+- **Simulador de Préstamos**: Permite a los usuarios solicitar préstamos para diferentes propósitos como la compra de una casa, un auto o un viaje.
+- **Cotizador de Divisas**: Calcula la conversión de dólar a euro en tiempo real.
 - **Interfaz Amigable**: Utiliza Bootstrap para un diseño responsivo y atractivo.
-
 
 ## Tecnologías Utilizadas
 
