@@ -20,3 +20,5 @@ document.getElementById('currency-form').addEventListener('submit', async (event
         document.getElementById('resultt').innerText = 'Error al obtener los datos. Por favor, intenta de nuevo.';
     }
 });
+
+
