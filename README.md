@@ -1,6 +1,6 @@
 # GreenBank
 
-GreenBank es un proyecto ficticio de un simulador de banco para mi entrega final del curso de Javascript de CoderHouse, diseñado para clientes que desean solicitar préstamos para financiar una casa, un auto o un viaje. Además, incluye un cotizador de dólar a euro. Este proyecto fue desarrollado utilizando HTML, CSS, Bootstrap, JavaScript, SweetAlerts y Spinners.
+GreenBank es un proyecto ficticio de un simulador de banco para mi entrega final del curso de Javascript de CoderHouse, diseñado para clientes que desean solicitar préstamos para financiar una casa, un auto o un viaje. Además, incluye un cotizador de dólar a euro. Este proyecto fue desarrollado utilizando HTML, CSS, Bootstrap, JavaScript y SweetAlerts.
 
 ## Características
 
