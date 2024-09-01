@@ -20,5 +20,3 @@ GreenBank es un proyecto ficticio de un simulador de banco para mi entrega final
 
 **bY Julián Santanatoglia**
 
-
-# GreenBank
